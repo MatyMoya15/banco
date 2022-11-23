@@ -1,0 +1,44 @@
+<body>
+  <br>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+      <div class="row align-items-stretch">
+        <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+        </div>
+        <div class="col bg-white p-5 rounded-end">
+          <div class="text-end">
+            <img src="./../../../assets/icono-bank.png" width="90px" height="50px" alt="">
+          </div>
+
+          <h2 class="fw-bold text-center py-5">Ingreso Empresas</h2>
+
+          <!--Login-->
+          <form [formGroup]="loginForm" (submit)="loginEmpresa()">
+            <div class="mb-4">
+              <label for="email" class="form-label">CUIT</label>
+              <input type="email" class="form-control" formControlName="cuit" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="form-label">Usuario</label>
+              <input type="email" class="form-control" formControlName="usuario" required>
+            </div>
+            <div class="mb-4">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" formControlName="password" required>
+            </div>
+            <div class="d-grid">
+              <button>
+              <a class="btn btn-primary" type="submit">Iniciar Sesión</a></button>
+            </div>
+
+            <div class="my-3">
+              <span>No estas registrado/a? <a href="./registroe">Hagasé Cliente</a></span><br>
+              <span><a href="#">Recuperar Contraseña</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<br><br><br><br>
+
+</body>

@@ -1,0 +1,45 @@
+<div id="content" class="py-4">
+  <div class="container">
+    <br><br>
+    <h2 class="fw-400 text-center mt-3">Enviar Dinero</h2>
+    <p class="lead text-center mb-4">Envía dinero a cualquier parte del mundo</p>
+    <div class="row">
+      <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+        <div class="bg-white shadow-sm rounded p-3 pt-sm-4 pb-sm-5 px-sm-5 mb-4">
+          <h3 class="text-5 fw-400 mb-3 mb-sm-4">Personal Details</h3>
+          <hr class="mx-n3 mx-sm-n5 mb-4">
+          <!-- Send Money Form
+          ============================ -->
+          <form id="form-send-money" method="post">
+            <div class="mb-3">
+              <label for="emailID" class="form-label">Receptor</label>
+              <input type="number" value="" class="form-control" data-bv-field="emailid" id="emailID" required placeholder="Ingrese DNI o CUIT de la cuenta">
+            </div>
+            <div class="mb-3">
+              <label for="youSend" class="form-label">Cantidad a Enviar</label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" data-bv-field="youSend" id="youSend" value="1,000" placeholder="">
+                <span class="input-group-text p-0">
+                  <div class="dropdown bootstrap-select form-control bg-transparent"><select id="youSendCurrency" data-style="form-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
+                    <optgroup label="Monedas Principales">
+                    <option data-icon="currency-flag currency-flag-ars me-1" data-subtext="Argentine peso" value="">ARS</option>
+                    <option data-icon="currency-flag currency-flag-usd me-1" data-subtext="United States dollar" selected="selected" value="">USD</option>
+                    </optgroup>
+                    <optgroup label="Otros">
+                      <option data-icon="currency-flag currency-flag-aed me-1" data-subtext="United Arab Emirates dirham" value="">BTC</option>
+                      </optgroup>
+                  </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder form-select bg-transparent border-0" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" title="ARS" data-id="youSendCurrency"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner"><i class=" currency-flag currency-flag-usd me-1"></i>&nbsp;ARS</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+                  </span>
+              </div>
+            </div>
+            <hr>
+            <p class="text-4 fw-500">Total a Enviar<span class="float-end">1,000.00 ARS</span></p>
+            <div class="d-grid"><button class="btn btn-primary">Continuar</button></div>
+          </form>
+          <!-- Send Money Form end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

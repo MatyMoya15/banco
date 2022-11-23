@@ -1,0 +1,68 @@
+
+<div class="container-xl px-4 mt-4"   *ngFor="let item of datosE">
+    <!-- Account page navigation-->
+    <nav class="nav nav-borders">
+        <a class="nav-link ms-0" href="./profemp" target="__blank">Perfil</a>
+        <a class="nav-link active" href="transac" target="__blank">Transacciones</a>
+    </nav>
+    <hr class="mt-0 mb-4">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <!-- Billing card 1-->
+            <div class="card h-100 border-start-lg border-start-primary">
+                <div class="card-body">
+                    <div class="small text-muted">Saldo</div>
+                    <div class="h3">${{item.saldo}} ARS</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <!-- Billing card 2-->
+            <div class="card h-100 border-start-lg border-start-secondary">
+                <div class="card-body">
+                    <div class="small text-muted">Transferencia</div>
+                    <button type="button" class="btn"><a href="./send">Enviar Dinero</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <!-- Billing card 3-->
+            <div class="card h-100 border-start-lg border-start-success">
+                <div class="card-body">
+                    <div class="small text-muted">Préstamo</div>
+                    <button type="button" class="btn btn-p"><a href="./prestamo">Pedir Préstamo</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Billing history card-->
+    <div class="card mb-4">
+        <div class="card-header">Historial de Transacciones</div>
+        <div class="card-body p-0">
+            <!-- Billing history table-->
+            <div class="table-responsive table-billing-history">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th class="border-gray-200" scope="col">ID de transaccion</th>
+                            <th class="border-gray-200" scope="col">Fecha</th>
+                            <th class="border-gray-200" scope="col">Cantidad</th>
+                            <th class="border-gray-200" scope="col">Tipo</th>
+                            <th class="border-gray-200" scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#39201</td>
+                            <td>06/15/2021</td>
+                            <td>$29.99</td>
+                            <td>Transferencia</td>
+                            <td><span class="badge bg-light text-dark">Pagado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

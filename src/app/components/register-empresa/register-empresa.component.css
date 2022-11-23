@@ -1,0 +1,18 @@
+body{
+  background: #ffe259;
+  background: linear-gradient(to right, #81FBB8, #28C76F);
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+  top: 13px;
+  }

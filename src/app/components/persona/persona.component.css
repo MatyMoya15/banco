@@ -1,0 +1,12 @@
+body{
+  background: #ffe259;
+  background: linear-gradient(to right, #ffa751, #ffe259);
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bg{
+  background-image: url(./../../../assets/persona.png);
+  background-position: center center;
+}

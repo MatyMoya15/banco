@@ -1,0 +1,12 @@
+body{
+  background: #ffe259;
+  background: linear-gradient(to right, #81FBB8, #28C76F);
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bg{
+  background-image: url(./../../../assets/empresa.png);
+  background-position: center center;
+}

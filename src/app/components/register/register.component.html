@@ -1,0 +1,105 @@
+<body>
+
+  <br>
+<section class="h-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img src="./../../../assets/regpersona.png"
+                alt="Sample photo" class="img-fluid"
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+            </div>
+            <div class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h3 class="mb-5 text-uppercase">Registro para Personas</h3>
+              <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="nombre" id="form3Example1m" class="form-control form-control-lg"/>
+                      <label class="form-label" for="form3Example1m">Nombre</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="apellido" id="form3Example1n" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1n">Apellido</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="dni" id="form3Example1m1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1m1">DNI</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="number" formControlName="telefono" id="form3Example1n1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1n1">Teléfono</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" formControlName="email" id="form3Example8" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example8">Email</label>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="usuario" id="form3Example1m1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1m1">Usuario</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline mb-4">
+                      <input type="password" formControlName="password" id="form3Example8" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example8">Contraseña</label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="provincia" id="form3Example1m1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1m1">Provincia</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" formControlName="ciudad" id="form3Example1n1" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1n1">Ciudad</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="date" formControlName="nacimiento" id="form3Example1n1" class="form-control form-control-lg" />
+                    <label class="form-label" for="form3Example1n1">Fecha de Nacimiento</label>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-end pt-3">
+                  <button type="submit" class="btn btn-warning btn-lg ms-2">Registrarse</button>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
+</body>

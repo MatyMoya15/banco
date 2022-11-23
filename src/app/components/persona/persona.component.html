@@ -1,0 +1,40 @@
+<body>
+  <br>
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+      <div class="row align-items-stretch">
+        <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+        </div>
+        <div class="col bg-white p-5 rounded-end">
+          <div class="text-end">
+            <img src="./../../../assets/icono-bank.png" width="90px" height="50px" alt="">
+          </div>
+
+          <h2 class="fw-bold text-center py-5">Ingreso Personas</h2>
+
+          <!--Login-->
+
+          <form [formGroup]="loginForm" (submit)="loginPersona()">
+            <div class="mb-4">
+              <label for="dni" class="form-label">DNI</label>
+              <input type="number" class="form-control" name="dni" formControlName="dni">
+            </div>
+            <div class="mb-4">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" name="password"
+              formControlName="password">
+            </div>
+            <div class="d-grid"><button>
+              <a type="submit" class="btn btn-primary">Iniciar Sesión</a></button>
+            </div>
+            <div class="my-3">
+              <span>No estas registrado/a? <a href="./registro">Hagasé Cliente</a></span><br>
+              <span><a href="#">Recuperar Contraseña</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<br><br><br><br>
+
+</body>

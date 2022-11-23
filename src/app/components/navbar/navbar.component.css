@@ -1,0 +1,32 @@
+
+
+.nav-link {
+  height: 40px;
+  font-size: 23px;
+  font-family: sans-serif;
+  margin-top: 6px;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.navbar{
+  background-color: #072146 !important;
+}
+
+.logo{
+  margin-right: 100px;
+  margin-left: 120px;
+}
+
+#home{
+  margin-right: 45px;
+}
+
+#persona{
+  margin-right: 45px;
+}
+

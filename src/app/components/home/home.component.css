@@ -1,0 +1,104 @@
+body{
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #7f848b;
+}
+
+#number{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.b-divider{
+  height: 2rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+}
+
+.cta{
+  background-image: url(../../../assets/fondo.png);
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.text-center{
+  text-align: center !important;
+}
+
+.cta h3{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p{
+  color: #fff;
+}
+
+.cta-btn{
+  margin-left: 30px;
+}
+
+.cta .cta-btn{
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about{
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1);
+  margin-right: calc(-.5);
+  margin-left: calc(-.5);
+}
+
+.about .content .btn-learn-more:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.about .content .btn-learn-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: 0.3s;
+  line-height: 1;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+  border: 2px solid #47b2e4;
+  text-decoration: none;
+}
